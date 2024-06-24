@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <h1>Sign in: </h1>
+    <div class="FirstF">
+        <form action="/signUp" method="post">
+            <label for="">User Name :</label>
+            <input type="text" name="userName">
+            <br>
+            <br>
+            <label for="">Last Name :</label>
+            <input type="text" name="LastName">
+            <br>
+            <br>
+            <label for="">Adress Email :</label>
+            <input type="text" name="EmailAdress">
+            <br>
+            <br>
+            <label for="">Password :</label>
+            <input type="password" name="password">
+            <button>Sign up</button>
+            <p> <%= err ? err:null %>
+            </p>
+            <p> <%= succes ? succes:null %> </p>
+            
+        </form>
+    </div>
+
+    <form action="/logIn" method="post">
+        <h1> Log in :</h1>
+        <label for="">Email adress: </label>
+        <input type="text">
+        <label for="">Password :</label>
+        <input type="password">
+        <a href=""><button>Log in </button>
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
